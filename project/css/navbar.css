@@ -1,0 +1,35 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0.5rem;
+
+    background-color: #91A0B6;
+}
+
+.navbar-left {
+    padding-left: 0.5rem;
+}
+
+.logo {
+    height: 55px;
+}
+
+.navbar-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0.75rem;
+}
+
+.icon-user {
+    width: 27px;
+    padding-right: 1rem;
+}
+
+.icon-cart {
+    width: 35px;
+}
