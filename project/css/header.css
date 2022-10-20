@@ -2,28 +2,16 @@
     text-decoration: none;
 }
 
-.header-title {
-    --h: 1.2em; /* the height */
-
-    line-height: var(--h);
-    color: #0000;
-    text-shadow: 0 var(--_i, var(--h)) #F4D8A4,
-    0 0 rgb(0 0 0 / var(--_i, 1));
-    background: linear-gradient(#ED851D 0 0) bottom/100% calc(100% - var(--_i, 1) * 100%) no-repeat;
-    overflow: hidden;
-    transition: 0.3s;
-}
-
 .header-title:hover {
-    --_i: 0;
+
 }
 
 .header-container {
-    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    display: grid;
-    place-content: center;
     background: #2B303A;
 }
 
@@ -33,4 +21,5 @@
     margin: 0;
     cursor: pointer;
     padding: 0.1em;
+    color: #ED851D;
 }

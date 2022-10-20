@@ -1,0 +1,25 @@
+.categories-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.categories-container h2 {
+    background-color: red;
+    padding: 2rem;
+}
+
+.category-container {
+    width: 100%;
+}
+
+.category-title {
+    font-size: 48px;
+}
+
+.category-image {
+    object-fit: cover;
+    width: 100%;
+    height: 20rem;
+}
