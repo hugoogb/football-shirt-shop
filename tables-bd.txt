@@ -1,0 +1,23 @@
+categories
+----------
+id, name, (img)
+
+
+products
+--------
+id, name, category_id, description, price, img
+
+
+users
+-----
+id, name, ...
+
+
+orders
+------
+id, user_id, date, total_products, total_import
+
+
+order_products
+--------------
+id, order_id, product_id, quantity, price, name
