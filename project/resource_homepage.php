@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/info-homepage.css"
 </head>
 <body>
 
@@ -22,9 +23,9 @@
     <?php require __DIR__ . '/controller/cnt_logo.php'; ?>
 </header>
 
-<section>
+<section class="homepage-info-section">
     <div class="homepage-info-container">
-        <a href="/index.php?action=list-categories">List categories</a>
+        <?php require __DIR__ . '/controller/cnt_info_homepage.php'; ?>
     </div>
 </section>
 

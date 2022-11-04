@@ -1,6 +1,6 @@
 <div class="navbar">
     <div class="navbar-left">
-        <a href="/index.php" target="_self"><img class="logo" src="/img/logo-big.png" alt="logo-header"></a>
+        <a href="/index.php" target="_self"><img class="logo" src="/img/logo-big.png" alt="logo header"></a>
     </div>
     <div class="navbar-right">
         <a href="/index.php?action=register" target="_self">
