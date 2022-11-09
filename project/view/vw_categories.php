@@ -1,24 +1,12 @@
 <div class="categories-container">
-    <h2>Categories</h2>
-
-    <div class="category-container">
-        <h1 class="category-title">Countries</h1>
-        <img class="category-image" src="img/header-background-cars.jpg">
-    </div>
-    <div class="category-container">
-        <h1 class="category-title">Spanish League</h1>
-        <img class="category-image" src="img/header-background-cars.jpg">
-    </div>
-    <div class="category-container">
-        <h1 class="category-title">English League</h1>
-        <img class="category-image" src="img/header-background-cars.jpg">
-    </div>
-    <div class="category-container">
-        <h1 class="category-title">Italic League</h1>
-        <img class="category-image" src="img/header-background-cars.jpg">
-    </div>
-    <div class="category-container">
-        <h1 class="category-title">French League</h1>
-        <img class="category-image" src="img/header-background-cars.jpg">
-    </div>
+    <?php foreach ($categories as $category): ?>
+        <div class="category-container">
+            <a href="product.php?id=<?php echo $category['id'] ?>">
+                <div class="anchor-container">
+                    <h1 class="category-title"><?php echo $category['name'] ?></h1>
+                    <img class="category-image" src="<?php echo $category['img'] ?>">
+                </div>
+            </a>
+        </div>
+    <?php endforeach; ?>
 </div>
