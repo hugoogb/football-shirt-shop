@@ -21,10 +21,8 @@
     <?php require __DIR__ . '/controller/cnt_logo.php'; ?>
 </header>
 
-<section class="homepage-info-section">
-    <div class="homepage-info-container">
-        <?php require __DIR__ . '/controller/cnt_homepage.php'; ?>
-    </div>
+<section>
+    <?php require __DIR__ . '/controller/cnt_homepage.php'; ?>
 </section>
 
 <footer>

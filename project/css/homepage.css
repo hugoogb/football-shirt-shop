@@ -1,7 +1,3 @@
-.homepage-info-container {
-    display: flex;
-}
-
 .homepage-info {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -13,7 +9,6 @@
 
 .homepage-info-img {
     object-fit: cover;
-    width: 100%;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
