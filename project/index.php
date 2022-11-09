@@ -1,5 +1,4 @@
 <?php
-// index.php
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -14,6 +13,8 @@ switch ($action) {
     case 'categories':
         include __DIR__ . '/resource_categories.php';
         break;
+    case 'list-products':
+        include __DIR__ . '/resource_list_products.php';
     default:
         include __DIR__ . '/resource_homepage.php';
         break;

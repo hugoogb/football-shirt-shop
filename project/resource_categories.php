@@ -1,5 +1,3 @@
-<!-- resource_list_categories.php -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
