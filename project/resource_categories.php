@@ -24,7 +24,7 @@
 </header>
 
 <section>
-    <?php require __DIR__ . '/controller/cnt_list_categories.php'; ?>
+    <?php require __DIR__ . '/controller/cnt_categories.php'; ?>
 </section>
 
 <footer>

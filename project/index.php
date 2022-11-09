@@ -11,8 +11,8 @@ switch ($action) {
     case 'register':
         include __DIR__ . '/resource_register.php';
         break;
-    case 'list-categories':
-        include __DIR__ . '/resource_list_categories.php';
+    case 'categories':
+        include __DIR__ . '/resource_categories.php';
         break;
     default:
         include __DIR__ . '/resource_homepage.php';

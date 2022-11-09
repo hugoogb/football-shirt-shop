@@ -25,7 +25,7 @@
 
 <section class="homepage-info-section">
     <div class="homepage-info-container">
-        <?php require __DIR__ . '/controller/cnt_info_homepage.php'; ?>
+        <?php require __DIR__ . '/controller/cnt_homepage.php'; ?>
     </div>
 </section>
 
