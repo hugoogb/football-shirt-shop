@@ -27,7 +27,7 @@
 
 .category-container:hover .category-image {
     opacity: 100%;
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 
 .category-title {
@@ -39,5 +39,5 @@
     color: #F4D8A4;
     background-color: #2B303A;
     padding: 0.5rem 1rem;
-    font-size: 3.5rem;
+    font-size: 4rem;
 }
