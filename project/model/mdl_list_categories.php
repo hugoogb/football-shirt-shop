@@ -2,7 +2,7 @@
 
 function getCategories($connDB): array
 {
-    $sql_query = 'SELECT * FROM categories';
+    $sql_query = "SELECT * FROM categories";
 
     $query_result = pg_query($connDB, $sql_query);
 

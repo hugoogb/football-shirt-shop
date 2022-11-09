@@ -17,10 +17,6 @@
     margin-bottom: 1rem;
 }
 
-.category-title {
-    font-size: 48px;
-}
-
 .category-image {
     object-fit: cover;
     width: 100%;
@@ -43,5 +39,5 @@
     color: #F4D8A4;
     background-color: #2B303A;
     padding: 0.5rem 1rem;
-    font-size: 4rem;
+    font-size: 3.5rem;
 }

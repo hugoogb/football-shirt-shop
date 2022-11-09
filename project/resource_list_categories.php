@@ -10,15 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
-    <link rel="stylesheet" type="text/css" href="css/categories.css">
+    <link rel="stylesheet" type="text/css" href="css/list_categories.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
 </head>
 <body>
 
 <header>
     <?php require __DIR__ . '/controller/cnt_header.php'; ?>
-
-    <?php require __DIR__ . '/controller/cnt_logo.php'; ?>
 </header>
 
 <section>

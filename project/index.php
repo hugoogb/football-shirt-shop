@@ -11,10 +11,11 @@ switch ($action) {
         include __DIR__ . '/resource_register.php';
         break;
     case 'categories':
-        include __DIR__ . '/resource_categories.php';
+        include __DIR__ . '/resource_list_categories.php';
         break;
     case 'list-products':
         include __DIR__ . '/resource_list_products.php';
+        break;
     default:
         include __DIR__ . '/resource_homepage.php';
         break;
