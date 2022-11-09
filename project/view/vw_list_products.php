@@ -1,7 +1,7 @@
+<?php foreach ($categories as $category): ?>
+    <h1><?php echo $category['name'] ?></h1>
+<?php endforeach; ?>
 <div class="products-container">
-    <?php foreach ($categories as $category): ?>
-        <h1><?php echo $category['name'] ?></h1>
-    <?php endforeach; ?>
     <?php foreach ($products as $product): ?>
         <div class="product-container">
             <a href="index.php?action=product&product_id=<?php echo $product['id'] ?>">
