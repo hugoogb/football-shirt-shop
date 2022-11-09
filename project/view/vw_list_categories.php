@@ -1,5 +1,7 @@
 <div class="categories-container">
-    <h1>Categories</h1>
+    <div class="header-title-container">
+        <h1 class="header-title">Categories</h1>
+    </div>
     <?php foreach ($categories as $category): ?>
         <div class="category-container">
             <a href="index.php?action=list-products&category_id=<?php echo $category['id'] ?>">

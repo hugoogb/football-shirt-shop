@@ -1,6 +1,8 @@
-<?php foreach ($categories as $category): ?>
-    <h1><?php echo $category['name'] ?></h1>
-<?php endforeach; ?>
+<div class="header-title-container">
+    <?php foreach ($categories as $category): ?>
+        <h1 class="header-title"><?php echo $category['name'] ?></h1>
+    <?php endforeach; ?>
+</div>
 <div class="products-container">
     <?php foreach ($products as $product): ?>
         <div class="product-container">

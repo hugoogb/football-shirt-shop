@@ -34,10 +34,6 @@
     width: 35px;
 }
 
-.logo-container a {
-    text-decoration: none;
-}
-
 .logo-container {
     display: flex;
     justify-content: center;
@@ -55,4 +51,21 @@
 
     /* color generate via: https://codepen.io/sosuke/pen/Pjoqqp */
     filter: invert(67%) sepia(34%) saturate(4865%) hue-rotate(349deg) brightness(97%) contrast(92%);
+}
+
+.header-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    background: #2B303A;
+    width: 100%;
+}
+
+.header-title {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 5rem;
+    color: #ED851D;
+    cursor: default;
 }
