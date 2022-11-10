@@ -16,6 +16,9 @@ switch ($action) {
     case 'list-products':
         include __DIR__ . '/resource_list_products.php';
         break;
+    case 'show-product':
+        include __DIR__ . '/resource_product.php';
+        break;
     default:
         include __DIR__ . '/resource_homepage.php';
         break;
