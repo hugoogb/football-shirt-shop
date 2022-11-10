@@ -8,6 +8,6 @@ $connDB = connectDB();
 
 $id = $_GET['category_id'] ?? null;
 $categories = getCategoryById($connDB, $id);
-$products = getProductsByCategoryId($connDB, $id);
+$list_products = getProductsByCategoryId($connDB, $id);
 
 include __DIR__ . '/../view/vw_list_products.php';
