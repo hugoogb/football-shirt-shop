@@ -14,9 +14,9 @@
     <?php require __DIR__ . '/controller/cnt_header.php'; ?>
 </header>
 
-<div class="form-container">
+<section>
     <?php require __DIR__ . '/controller/cnt_register.php'; ?>
-</div>
+</section>
 
 <footer>
     <?php require __DIR__ . '/controller/cnt_footer.php'; ?>
