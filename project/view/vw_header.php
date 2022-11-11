@@ -1,14 +1,30 @@
 <div class="navbar">
     <div class="navbar-left">
-        <a href="/index.php" target="_self"><img class="navbar-logo" src="/img/logo-big.png" alt="header logo"></a>
+        <a href="/index.php" target="_self"><img class="navbar-logo" src="/img/logo-big.png"
+                                                 alt="header logo"></a>
     </div>
     <div class="navbar-right">
-        <a href="/index.php?action=register" target="_self">
-            <svg class="icon-user" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <div class="dropdown">
+            <svg class="icon-user" xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 448 512">
                 <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                 <path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0S96 57.3 96 128s57.3 128 128 128zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/>
             </svg>
-        </a>
+            <div class="dropdown-content">
+                <div class="dropdown-user-not-logged">
+                    <ul>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-user-logged">
+                    <ul>
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Orders</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <a href="#" target="_self">
             <svg class="icon-cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                 <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
