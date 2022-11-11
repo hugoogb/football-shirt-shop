@@ -20,11 +20,11 @@
 }
 
 .category-image {
+    display: block;
     object-fit: cover;
     width: 100%;
     height: 40rem;
     opacity: 85%;
-    scale: 1.02;
     transition: transform 0.6s, opacity 0.3s ease-in-out;
 }
 
@@ -42,6 +42,7 @@
     color: #F4D8A4;
     background-color: #2B303A;
     padding: 0.5rem 1rem;
-    font-size: 3rem;
+    font-size: min(10vw, 3rem);
     text-transform: uppercase;
+    text-align: center;
 }

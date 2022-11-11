@@ -8,6 +8,7 @@
 }
 
 .homepage-info-img {
+    display: block;
     object-fit: cover;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
