@@ -4,6 +4,9 @@
                                                  alt="header logo"></a>
     </div>
     <div class="navbar-right">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+                type="text/javascript"></script>
+        <script src="/js/dropdown.js" type="text/javascript"></script>
         <div class="dropdown">
             <svg class="icon-user" xmlns="http://www.w3.org/2000/svg"
                  viewBox="0 0 448 512">
