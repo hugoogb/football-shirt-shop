@@ -1,5 +1,3 @@
 AuthType Basic
-AuthName "Botiga Online"
-AuthBasicProvider file
-AuthUserFile /home/TDIW/tdiw-k5/public_html/.htpasswd
-Require valid-user
+AuthName "CLASSIC FOOTBALL"
+Require all granted

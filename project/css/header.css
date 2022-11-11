@@ -44,7 +44,7 @@
 }
 
 .logo-img {
-    height: 10rem;
+    max-height: 8rem;
     margin: 0;
     cursor: pointer;
     padding: 0.1em;
@@ -65,7 +65,8 @@
 
 .header-title {
     font-family: "Segoe UI", sans-serif;
-    font-size: 5rem;
+    font-size: 4rem;
+    text-transform: uppercase;
     color: #ED851D;
     cursor: default;
 }

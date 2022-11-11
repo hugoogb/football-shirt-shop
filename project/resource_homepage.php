@@ -17,8 +17,6 @@
 
 <header>
     <?php require __DIR__ . '/controller/cnt_header.php'; ?>
-
-    <?php require __DIR__ . '/controller/cnt_logo.php'; ?>
 </header>
 
 <section>
