@@ -10,8 +10,8 @@
                     <p class="product-description"><?php echo $product['description'] ?></p>
                 </div>
                 <div class="product-price-btn">
-                    <h4 class="product-price"><?php echo $product['price'] ?></h4>
-                    <button class="product-button" type="button">Add to cart</button>
+                    <h3 class="product-price"><?php echo $product['price'] ?></h3>
+                    <button class="product-btn" type="button">Add to cart</button>
                 </div>
             </div>
         </div>
