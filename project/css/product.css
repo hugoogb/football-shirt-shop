@@ -94,7 +94,7 @@
     }
 
     .product-image-container {
-        border-right: 0;
+        border-right: none;
         border-bottom: 0.3rem solid #91A0B6;
     }
 

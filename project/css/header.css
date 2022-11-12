@@ -33,23 +33,6 @@
     max-width: 27px;
 }
 
-.dropdown {
-    display: inline-block;
-    position: relative;
-    float: right;
-    cursor: pointer;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    right: 0;
-    z-index: 1;
-    background-color: red;
-    overflow: auto;
-    width: 8rem;
-}
-
 .icon-user:hover {
     /* color generate via: https://codepen.io/sosuke/pen/Pjoqqp */
     filter: invert(67%) sepia(34%) saturate(4865%) hue-rotate(349deg) brightness(97%) contrast(92%);
@@ -60,10 +43,78 @@
     filter: invert(67%) sepia(34%) saturate(4865%) hue-rotate(349deg) brightness(97%) contrast(92%);
 }
 
+.dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: -2.8rem;
+    top: 2.8rem;
+    z-index: 1;
+    background-color: #F4D8A4;
+    overflow: hidden;
+
+    border-radius: 7px 7px 7px 7px;
+    /* generated via CSS MATIC: https://goo.gl/cIbnS */
+    -webkit-box-shadow: 0 14px 32px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 14px 32px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 14px 32px 0 rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-items-container {
+    font-size: min(4.5vw, 1.5rem);
+    width: 55vw;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-item {
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    border-bottom: 0.3rem solid #ED851D;
+}
+
+.dropdown-item:last-child {
+    border-bottom: none;
+}
+
+.dropdown-item:hover {
+    font-weight: 600;
+    color: #2B303A;
+    background-color: #ED851D;
+}
+
+.dropdown-item p {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+/*
+.user-not-logged {
+    display: none;
+}
+
+.user-logged {
+    display: none;
+}
+*/
+
 .icon-cart {
     width: 11.5vw;
     max-width: 35px;
     padding-left: 0.75rem;
+}
+
+
+.icon-cart:hover {
+    /* color generate via: https://codepen.io/sosuke/pen/Pjoqqp */
+    filter: invert(67%) sepia(34%) saturate(4865%) hue-rotate(349deg) brightness(97%) contrast(92%);
 }
 
 .logo-container {
