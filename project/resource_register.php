@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<header>
+<header id="top">
     <?php require __DIR__ . '/controller/cnt_header.php'; ?>
 </header>
 

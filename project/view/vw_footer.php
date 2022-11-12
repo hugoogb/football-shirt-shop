@@ -1,3 +1,13 @@
 <div class="footer-container">
-    <p>2022 CLASSIC FOOTBALL</p>
+    <div class="footer-content-container">
+        <div class="social-container">
+            <h4>Follow us</h4>
+            <a></a>
+            <a></a>
+            <a></a>
+        </div>
+        <div class="">
+
+        </div>
+    </div>
 </div>
