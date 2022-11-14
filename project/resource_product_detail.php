@@ -23,7 +23,7 @@
     <?php require __DIR__ . '/controller/cnt_header.php'; ?>
 </header>
 
-<section>
+<section id="content-container">
     <?php require __DIR__ . '/controller/cnt_product_detail.php'; ?>
 </section>
 

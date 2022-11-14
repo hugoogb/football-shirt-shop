@@ -31,7 +31,5 @@
     <?php require __DIR__ . '/controller/cnt_footer.php'; ?>
 </footer>
 
-<?php require __DIR__ . '/controller/cnt_scroll_top.php'; ?>
-
 </body>
 </html>
