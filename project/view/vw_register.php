@@ -4,7 +4,7 @@
 
 <div class="form-wrapper">
     <div class="form-container">
-        <form>
+        <form method="post" action="/controller/cnt_insert_register.php">
             <div class="form-inputs">
                 <label>Name
                     <input type="text" name="name" placeholder="Name" required>
