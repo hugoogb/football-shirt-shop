@@ -23,15 +23,13 @@
     <?php require __DIR__ . '/controller/cnt_header.php'; ?>
 </header>
 
-<section id="content-container">
-    <?php require __DIR__ . '/controller/cnt_homepage.php'; ?>
+<section>
+    <?php require __DIR__ . '/controller/cnt_product_detail.php'; ?>
 </section>
 
 <footer>
     <?php require __DIR__ . '/controller/cnt_footer.php'; ?>
 </footer>
-
-<?php require __DIR__ . '/controller/cnt_scroll_top.php'; ?>
 
 </body>
 </html>
