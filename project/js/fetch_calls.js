@@ -18,3 +18,17 @@ const product_detail = async (product_id) => {
             return response.text();
         })
 }
+
+const load_register = async () => {
+    document.getElementById("content-container").innerHTML = await fetch("/controller/cnt_register.php")
+        .then(response => {
+            return response.text();
+        })
+}
+
+const load_login = async () => {
+    document.getElementById("content-container").innerHTML = await fetch("/controller/cnt_login.php")
+        .then(response => {
+            return response.text();
+        })
+}

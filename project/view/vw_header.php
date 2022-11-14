@@ -12,7 +12,8 @@
             </svg>
             <div class="dropdown-content">
                 <div class="dropdown-items-container">
-                    <a class="dropdown-item user-not-logged" href="#"><p>Login</p></a>
+                    <a onclick="load_login()" class="dropdown-item user-not-logged">
+                        <p>Login</p></a>
                     <a class="dropdown-item user-logged" href="#"><p>Account</p></a>
                     <a class="dropdown-item user-logged" href="#"><p>Orders</p></a>
                     <a class="dropdown-item user-logged" href="#"><p>Logout</p></a>
@@ -26,3 +27,4 @@
             </svg>
         </a>
     </div>
+</div>

@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="/css/list_categories.css">
     <link rel="stylesheet" type="text/css" href="/css/list_products.css">
     <link rel="stylesheet" type="text/css" href="/css/product_detail.css">
+    <link rel="stylesheet" type="text/css" href="/css/login_register.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"
             type="text/javascript" defer></script>
     <script src="/js/dropdown.js" type="text/javascript" defer></script>

@@ -7,8 +7,8 @@ error_reporting(E_ALL);
 $action = $_GET['action'] ?? NULL;
 
 switch ($action) {
-    case 'register':
-        include __DIR__ . '/resource_register.php';
+    case 'login-register':
+        include __DIR__ . '/resource_login_register.php';
         break;
     case 'categories':
         include __DIR__ . '/resource_list_categories.php';

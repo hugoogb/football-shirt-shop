@@ -1,0 +1,86 @@
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+}
+
+.form-container {
+    padding: 1rem;
+
+    border-radius: 7px 7px 7px 7px;
+    /* generated via CSS MATIC: https://goo.gl/cIbnS */
+    -webkit-box-shadow: 0 14px 32px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 14px 32px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 14px 32px 0 rgba(0, 0, 0, 0.15);
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-inputs label {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+.form-inputs label input {
+    margin-top: 0.5rem;
+    padding: 0.75rem;
+    outline: none;
+    border: transparent;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.1s ease-in-out;
+}
+
+.form-inputs label input:hover {
+    border: 0.1rem solid #91A0B6;
+}
+
+.form-inputs label input:focus {
+    border: 0.2rem solid #91A0B6;
+}
+
+.form-submit {
+    width: fit-content;
+    padding: 0.75rem;
+    margin-left: 12rem;
+}
+
+.form-submit input {
+    padding: 0.75rem;
+    font-size: min(4vw, 1.2rem);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    outline: none;
+    border: transparent;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.1s ease-in-out;
+}
+
+.form-submit input:hover {
+    background-color: #91A0B6;
+    color: #F4D8A4;
+}
+
+.form-info {
+    font-size: min(3vw, 0.8rem);
+    margin-top: 0.5rem;
+}
+
+.form-info a {
+    cursor: pointer;
+    font-weight: 500;
+    color: #2B303A;
+}
+
+.form-info a:hover {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
