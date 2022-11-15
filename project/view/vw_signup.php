@@ -1,10 +1,10 @@
 <div class="header-title-container">
-    <h1 id="header" class="header-title">Register</h1>
+    <h1 id="header" class="header-title">SignUp</h1>
 </div>
 
 <div class="form-wrapper">
     <div class="form-container">
-        <form method="post" action="/controller/cnt_insert_register.php">
+        <form method="post" action="/controller/cnt_signup_done.php">
             <div class="form-inputs">
                 <label>Name
                     <input type="text" name="name" placeholder="Name" required>
@@ -27,7 +27,7 @@
                 </label>
             </div>
             <div class="form-submit">
-                <input type="submit" value="Register">
+                <input type="submit" value="SignUp">
             </div>
         </form>
         <p class="form-info">Already have an account? <a onclick="load_login()">Login</a></p>

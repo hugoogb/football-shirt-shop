@@ -19,7 +19,7 @@ const product_detail = async (product_id) => {
         })
 }
 
-const load_register = async () => {
+const load_signUp = async () => {
     document.getElementById("content-container").innerHTML = await fetch("/controller/cnt_register.php")
         .then(response => {
             return response.text();

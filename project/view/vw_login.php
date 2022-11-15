@@ -17,6 +17,6 @@
                 <input type="submit" value="Login">
             </div>
         </form>
-        <p class="form-info">You don't have an account? <a onclick="load_register()">Register</a></p>
+        <p class="form-info">You don't have an account? <a onclick="load_signUp()">SignUp</a></p>
     </div>
 </div>
