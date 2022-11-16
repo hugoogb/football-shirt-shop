@@ -128,7 +128,7 @@
 
 .logo-img {
     user-select: none;
-    max-height: 25vw;
+    max-height: min(25vw, 15rem);
     margin: 0;
     cursor: pointer;
     padding: 0.1em;
