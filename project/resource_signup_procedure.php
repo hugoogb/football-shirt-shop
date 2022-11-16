@@ -25,7 +25,7 @@
 </header>
 
 <section id="content-container">
-    <?php require __DIR__ . '/controller/cnt_product_detail.php'; ?>
+    <?php require __DIR__ . '/controller/cnt_signup_procedure.php'; ?>
 </section>
 
 <footer>

@@ -19,6 +19,9 @@ switch ($action) {
     case 'product-detail':
         include __DIR__ . '/resource_product_detail.php';
         break;
+    case 'signup-procedure':
+        include __DIR__ . '/resource_signup_procedure.php';
+        break;
     default:
         include __DIR__ . '/resource_homepage.php';
         break;

@@ -15,4 +15,4 @@ $values_register = [$name, $email, $password, $address, $city, $postal_code_zip]
 
 signUp($connDB, $values_register);
 
-include __DIR__ . '/../view/vw_signup_done.php';
+include __DIR__ . '/../view/vw_signup_confirmation.php';

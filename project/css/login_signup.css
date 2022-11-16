@@ -84,3 +84,64 @@
     text-decoration: underline;
 }
 
+.signup-confirmation-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.signup-confirmation-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 2.5rem;
+
+    border-radius: 7px 7px 7px 7px;
+    /* generated via CSS MATIC: https://goo.gl/cIbnS */
+    -webkit-box-shadow: 0 14px 32px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 14px 32px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 14px 32px 0 rgba(0, 0, 0, 0.15);
+}
+
+.signup-confirmation-title {
+    font-size: min(6vw, 1.5rem);
+    padding: 0.5rem 3rem;
+    border-bottom: 0.3rem solid #91A0B6;
+}
+
+.signup-confirmation-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 0.5rem 1rem;
+}
+
+.signup-confirmation-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 1rem;
+}
+
+.signup-confirmation-item:first-child {
+    margin-top: 0;
+}
+
+.signup-confirmation-item h4 {
+    font-size: min(4.5vw, 1.2rem);
+    font-weight: 600;
+
+    padding-right: 0.5rem;
+
+    border-right: 0.15rem solid #91A0B6;
+}
+
+.signup-confirmation-item p {
+    font-size: min(4vw, 1rem);
+
+    padding-left: 0.5rem;
+}

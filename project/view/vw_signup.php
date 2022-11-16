@@ -4,7 +4,7 @@
 
 <div class="form-wrapper">
     <div class="form-container">
-        <form method="post" action="/controller/cnt_signup_done.php">
+        <form method="post" action="/index.php?action=signup-procedure">
             <div class="form-inputs">
                 <label>Name
                     <input type="text" name="name" placeholder="Name" required>
