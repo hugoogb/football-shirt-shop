@@ -11,6 +11,7 @@
     margin-top: 3rem;
     overflow: hidden;
     z-index: 2;
+    cursor: pointer;
 
     /* border-radius: 7px 7px 7px 7px; */
     /* generated via CSS MATIC: https://goo.gl/cIbnS */
