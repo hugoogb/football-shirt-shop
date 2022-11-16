@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CLASSIC FOOTBALL</title>
-    <link rel="icon" href="img/logo-small.png">
+    <link rel="icon" href="https://www.classicfootball.shop/wpsystem/wp-content/uploads/2022/03/favicon-96x96-1.png">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link rel="stylesheet" type="text/css" href="/css/header.css">
     <link rel="stylesheet" type="text/css" href="/css/footer.css">

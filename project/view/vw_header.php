@@ -1,6 +1,7 @@
 <div class="navbar">
     <div class="navbar-left">
-        <a href="/index.php" target="_self"><img class="navbar-logo" src="/img/logo-big.png"
+        <a href="/index.php" target="_self"><img class="navbar-logo"
+                                                 src="https://www.classicfootball.shop/wpsystem/wp-content/uploads/2022/03/new-logo-horizontal.png"
                                                  alt="header logo"></a>
     </div>
     <div class="navbar-right">
