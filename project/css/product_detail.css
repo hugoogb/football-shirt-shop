@@ -45,6 +45,7 @@
 
 .product-text {
     padding: 0.5rem 1rem;
+    max-width: 100%
 }
 
 .product-title {
