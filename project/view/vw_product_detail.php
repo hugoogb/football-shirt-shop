@@ -6,7 +6,7 @@
         <div class="product-info">
             <div class="product-text">
                 <h1 class="product-title"><?php echo $product->name ?></h1>
-                <h3 class="product-category"><?php echo $category->name ?></h3>
+                <h2 class="product-category"><?php echo $category->name ?></h2>
                 <p class="product-description"><?php echo $product->description ?></p>
             </div>
             <div class="product-price-btn">

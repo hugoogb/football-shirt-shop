@@ -36,6 +36,11 @@
 .product-info {
     width: 100%;
     max-width: 30rem;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
 }
 
 .product-text {
@@ -48,14 +53,19 @@
     text-transform: uppercase;
 }
 
+.product-category {
+    font-size: min(6vw, 2rem);
+    font-weight: 500;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
 .product-description {
     font-size: min(5vw, 1.5rem);
 }
 
 .product-price-btn {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    align-self: end;
     display: flex;
     flex-direction: row;
     justify-content: end;
@@ -108,6 +118,6 @@
 
     .product-price-btn {
         padding: 0;
-        margin-bottom: 1rem;
+        margin: 1rem 0;
     }
 }
