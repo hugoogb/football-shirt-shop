@@ -10,3 +10,10 @@ function getProductsByCategoryId($connDB, $id): array
 
     return [];
 }
+
+function getAllProducts($connDB): array
+{
+    $query_result = pg_query($connDB, "SELECT * FROM products");
+
+    return pg_fetch_all($query_result);
+}

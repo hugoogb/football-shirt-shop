@@ -6,10 +6,22 @@
     </a>
 </div>
 
-<div class="homepage-content">
-    <h1>Welcome to our football shirt shop!</h1>
-    <img class="homepage-info-img"
-         src="https://i2-prod.chroniclelive.co.uk/incoming/article23626930.ece/ALTERNATES/s1227b/0_Opening-of-NUFC-retro-shirt-pop-up-shop.jpg"
-         alt="football shirt shop">
-    <a onclick="list_categories()"><h1>List categories</h1></a>
+<div class="homepage-container">
+    <div class="homepage-img-container">
+        <img class="homepage-img"
+             src="https://i2-prod.chroniclelive.co.uk/incoming/article23626930.ece/ALTERNATES/s1227b/0_Opening-of-NUFC-retro-shirt-pop-up-shop.jpg"
+             alt="football shirt shop">
+    </div>
+    <div class="categories-homepage-container">
+        <h1 class="categories-homepage-title">Categories</h1>
+        <div onclick="stopSlideShow();list_categories()" class="slideshow-container">
+            <h1>See available categories</h1>
+            <?php foreach ($categories as $category): ?>
+                <div class="slide fade">
+                    <img class="slide-image" src="<?php echo $category['img'] ?>"
+                         alt="<?php echo $category['name'] ?>">
+                </div>
+            <?php endforeach; ?>
+        </div>
+    </div>
 </div>
