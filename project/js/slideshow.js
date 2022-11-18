@@ -1,7 +1,3 @@
-window.addEventListener("load", () => {
-    return show_slides(0);
-});
-
 const show_slides = (slideIndex) => {
     const slides = document.getElementsByClassName("slide");
 
@@ -18,14 +14,7 @@ const show_slides = (slideIndex) => {
     }, 2000, slideIndex);
 }
 
-const stopSlideShow = () => {
-    // https://gist.github.com/mcenirm/4165198
-    (function (w) {
-        w = w || window;
-        let i = w.setInterval(function () {
-        }, 100000);
-        while (i >= 0) {
-            w.clearInterval(i--);
-        }
-    })(/*window*/);
+const stopSlideShow = (intervalId) => {
+    //console.log("cleared interval (id: " + intervalId + ")")
+    clearInterval(intervalId)
 }

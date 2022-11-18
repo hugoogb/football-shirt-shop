@@ -13,7 +13,7 @@
             </svg>
             <div class="dropdown-content">
                 <div class="dropdown-items-container">
-                    <a onclick="stopSlideShow();load_login()" class="dropdown-item user-not-logged">
+                    <a onclick="stopSlideShow(intervalId);load_login()" class="dropdown-item user-not-logged">
                         <p>Login</p></a>
                     <a class="dropdown-item user-logged" href="#"><p>Account</p></a>
                     <a class="dropdown-item user-logged" href="#"><p>Orders</p></a>

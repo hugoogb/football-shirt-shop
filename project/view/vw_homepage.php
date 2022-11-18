@@ -14,7 +14,7 @@
     </div>
     <div class="categories-homepage-container">
         <h1 class="categories-homepage-title">Categories</h1>
-        <div onclick="stopSlideShow();list_categories()" class="slideshow-container">
+        <div onclick="stopSlideShow(intervalId);list_categories()" class="slideshow-container">
             <h1>See available categories</h1>
             <?php foreach ($categories as $category): ?>
                 <div class="slide fade">
@@ -25,3 +25,8 @@
         </div>
     </div>
 </div>
+
+<script src="/js/slideshow.js" type="text/javascript"></script>
+<script>
+    const intervalId = show_slides(0);
+</script>
