@@ -7,23 +7,23 @@
         <form method="post" action="/index.php?action=signup-procedure">
             <div class="form-inputs">
                 <label>Name
-                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="text" name="name" placeholder="Name" required pattern="[a-zA-Z\s]+">
                 </label>
                 <label>Email
                     <input type="email" name="email" placeholder="Email" required>
                 </label>
                 <label>Password
-                    <input type="password" name="password" placeholder="Password" required>
+                    <input type="password" name="password" placeholder="Password" required pattern="[a-zA-Z0-9]+">
                 </label>
                 <label>Address
-                    <input type="text" name="address" placeholder="Address" required>
+                    <input type="text" name="address" placeholder="Address" required pattern="[a-zA-Z\s]{0,30}">
                 </label>
                 <label>City
-                    <input type="text" name="city" placeholder="City" required>
+                    <input type="text" name="city" placeholder="City" required pattern="[a-zA-Z\s]{0,30}">
                 </label>
                 <label>Postal code (ZIP)
-                    <input type="text" pattern="[0-9]{5}" name="postal-code-zip" placeholder="Postal code (ZIP)"
-                           required>
+                    <input type="text" name="postal-code-zip" placeholder="Postal code (ZIP)" required
+                           pattern="[0-9]{5}">
                 </label>
             </div>
             <div class="form-submit">
