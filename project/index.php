@@ -10,22 +10,22 @@ $action = $_GET['action'] ?? NULL;
 
 switch ($action) {
     case 'view-login':
-        include __DIR__ . '/controller/cnt_login.php';
+        include __DIR__ . '/resource_login.php';
         break;
     case 'view-signup':
-        include __DIR__ . '/controller/cnt_signup.php';
+        include __DIR__ . '/resource_signup.php';
         break;
     case 'list-categories':
-        include __DIR__ . '/controller/cnt_list_categories.php';
+        include __DIR__ . '/resource_list_categories.php';
         break;
     case 'list-products':
-        include __DIR__ . '/controller/cnt_list_products.php';
+        include __DIR__ . '/resource_list_products.php';
         break;
     case 'product-detail':
-        include __DIR__ . '/controller/cnt_product_detail.php';
+        include __DIR__ . '/resource_product_detail.php';
         break;
     case 'signup-procedure':
-        include __DIR__ . '/controller/cnt_signup_procedure.php';
+        include __DIR__ . '/resource_signup_procedure.php';
         break;
     default:
         include __DIR__ . '/resource_homepage.php';
