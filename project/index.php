@@ -27,6 +27,9 @@ switch ($action) {
     case 'signup-procedure':
         include __DIR__ . '/resource_signup_procedure.php';
         break;
+    case 'login-procedure':
+        include __DIR__ . '/resource_login_procedure.php';
+        break;
     default:
         include __DIR__ . '/resource_homepage.php';
         break;
