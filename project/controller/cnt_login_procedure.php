@@ -21,6 +21,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($user) {
         $_SESSION['user_id'] = $user->id;
+        $userData = getUserData($connDB, $_SESSION['user_id']);
+        $_SESSION['user_data']['name'] = $userData->name;
+        $_SESSION['user_data']['email'] = $userData->email;
+        $_SESSION['user_data']['address'] = $userData->address;
+        $_SESSION['user_data']['city'] = $userData->city;
+        $_SESSION['user_data']['postal_code_zip'] = $userData->postal_code_zip;
     }
 }
 

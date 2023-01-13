@@ -37,3 +37,16 @@ function login($connDB, string $email, string $password)
 
     return password_verify($password, $result->password) ? $result : null;
 }
+
+function getUserData($connDB, int $user_id)
+{
+    $query_result = pg_query_params($connDB, "SELECT name, email, address, city, postal_code_zip FROM users WHERE id = $1", array($user_id));
+
+    $result = pg_fetch_object($query_result);
+
+    if ($result === false) {
+        return null;
+    }
+
+    return $result;
+}
