@@ -28,6 +28,10 @@
     padding: 0.75rem;
 }
 
+.navbar-message-user-container {
+    margin-right: 1.1rem;
+}
+
 .icon-user {
     width: 8.5vw;
     max-width: 27px;

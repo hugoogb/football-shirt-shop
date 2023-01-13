@@ -5,6 +5,15 @@
                                                  alt="header logo"></a>
     </div>
     <div class="navbar-right">
+        <div class="navbar-message-user-container">
+            <?php
+            if (isset($_SESSION['user_id'])) {
+                ?>
+                <h3>Hello, <?php echo $_SESSION['user_data']['name'] ?></h3>
+                <?php
+            }
+            ?>
+        </div>
         <div class="dropdown">
             <svg class="icon-user" xmlns="http://www.w3.org/2000/svg"
                  viewBox="0 0 448 512">
