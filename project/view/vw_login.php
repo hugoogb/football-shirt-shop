@@ -5,7 +5,7 @@
 <div class="form-wrapper">
     <div class="form-container">
         <form method="post" action="/index.php?action=login-procedure">
-            <div class="form-input">
+            <div class="form-inputs">
                 <label>Email
                     <input type="email" name="email" placeholder="Email" required>
                 </label>
