@@ -7,7 +7,7 @@
     <div class="navbar-right">
         <div class="navbar-message-user-container">
             <?php
-            if (isset($_SESSION['user_id'])) {
+            if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
                 ?>
                 <h3>Hello, <?php echo $_SESSION['user_data']['name'] ?></h3>
                 <?php
@@ -22,7 +22,7 @@
             </svg>
             <div class="dropdown-content">
                 <?php
-                if (isset($_SESSION['user_id'])) {
+                if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
                     ?>
                     <div class="dropdown-items-container">
                         <a class="dropdown-item user-logged" href="#"><p>Account</p></a>

@@ -1,7 +1,7 @@
 <div class="login-signup-confirmation-wrapper">
     <div class="login-signup-confirmation-container">
         <?php
-        if (isset($_SESSION['user_id'])) {
+        if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
             ?>
             <div class="login-signup-confirmation-title">
                 <h1>Login successfully</h1>
