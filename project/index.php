@@ -9,11 +9,20 @@ session_start();
 $action = $_GET['action'] ?? NULL;
 
 switch ($action) {
+    case 'view-signup':
+        include __DIR__ . '/resource_signup.php';
+        break;
+    case 'signup-procedure':
+        include __DIR__ . '/resource_signup_procedure.php';
+        break;
     case 'view-login':
         include __DIR__ . '/resource_login.php';
         break;
-    case 'view-signup':
-        include __DIR__ . '/resource_signup.php';
+    case 'login-procedure':
+        include __DIR__ . '/resource_login_procedure.php';
+        break;
+    case 'logout':
+        include __DIR__ . '/resource_logout.php';
         break;
     case 'list-categories':
         include __DIR__ . '/resource_list_categories.php';
@@ -23,12 +32,6 @@ switch ($action) {
         break;
     case 'product-detail':
         include __DIR__ . '/resource_product_detail.php';
-        break;
-    case 'signup-procedure':
-        include __DIR__ . '/resource_signup_procedure.php';
-        break;
-    case 'login-procedure':
-        include __DIR__ . '/resource_login_procedure.php';
         break;
     default:
         include __DIR__ . '/resource_homepage.php';
