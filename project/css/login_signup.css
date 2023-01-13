@@ -45,6 +45,14 @@
     border: 0.2rem solid #91A0B6;
 }
 
+.form-inputs label input:invalid {
+    border: 0.1rem solid red;
+}
+
+.form-inputs label input:focus:invalid {
+    border: 0.2rem solid red;
+}
+
 .form-submit {
     width: fit-content;
     padding: 0.75rem;
