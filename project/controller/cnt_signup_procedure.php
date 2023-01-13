@@ -1,8 +1,7 @@
 <?php
 
 require_once __DIR__ . '/../model/mdl_connectDB.php';
-require_once __DIR__ . '/../model/mdl_signup.php';
-require_once __DIR__ . '/../model/mdl_validation.php';
+require_once __DIR__ . '/../model/mdl_users.php';
 
 $connDB = connectDB();
 
@@ -16,6 +15,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 $values_register = [$name, $email, $password, $address, $city, $postal_code_zip];
+
+$values_register = filter_vars_signup($values_register);
 
 $result = signUp($connDB, $values_register);
 

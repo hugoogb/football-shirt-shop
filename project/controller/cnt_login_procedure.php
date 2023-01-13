@@ -1,7 +1,6 @@
 <?php
 
 require_once __DIR__ . '/../model/mdl_connectDB.php';
-require_once __DIR__ . '/../model/mdl_validation.php';
 require_once __DIR__ . '/../model/mdl_users.php';
 
 $connDB = connectDB();
