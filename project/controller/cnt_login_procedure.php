@@ -24,4 +24,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-include __DIR__ . '/../view/vw_login_confirmation.php';
+header('Location: /index.php');
+
+//include __DIR__ . '/../view/vw_login_confirmation.php';

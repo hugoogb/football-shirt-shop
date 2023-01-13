@@ -20,4 +20,6 @@ $values_register = filter_vars_signup($values_register);
 
 $result = signUp($connDB, $values_register);
 
-include __DIR__ . '/../view/vw_signup_confirmation.php';
+header('Location: /index.php');
+
+//include __DIR__ . '/../view/vw_signup_confirmation.php';
