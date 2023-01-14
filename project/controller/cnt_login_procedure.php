@@ -27,9 +27,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['user_data']['address'] = $userData->address;
         $_SESSION['user_data']['city'] = $userData->city;
         $_SESSION['user_data']['postal_code_zip'] = $userData->postal_code_zip;
+    } else {
+        include __DIR__ . '/../view/vw_login_error.php';
+        exit;
     }
 }
 
 header('Location: /index.php');
-
-//include __DIR__ . '/../view/vw_login_confirmation.php';

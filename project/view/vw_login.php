@@ -4,14 +4,12 @@
 
 <div class="form-wrapper">
     <div class="form-container">
-        <form method="post" action="/index.php?action=login-procedure">
+        <form method="post" action="/index.php?action=login">
             <div class="form-inputs">
-                <label>Email
-                    <input type="email" name="email" placeholder="Email" required>
-                </label>
-                <label>Password
-                    <input type="password" name="password" placeholder="Password" required>
-                </label>
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Email" required>
+                <label>Password</label>
+                <input type="password" name="password" placeholder="Password" required>
             </div>
             <div class="form-submit">
                 <input type="submit" value="Login">

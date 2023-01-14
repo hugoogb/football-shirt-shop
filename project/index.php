@@ -9,16 +9,16 @@ session_start();
 $action = $_GET['action'] ?? NULL;
 
 switch ($action) {
-    case 'view-signup':
+    case 'form-signup':
         include __DIR__ . '/resource_signup.php';
         break;
-    case 'signup-procedure':
+    case 'signup':
         include __DIR__ . '/resource_signup_procedure.php';
         break;
-    case 'view-login':
+    case 'form-login':
         include __DIR__ . '/resource_login.php';
         break;
-    case 'login-procedure':
+    case 'login':
         include __DIR__ . '/resource_login_procedure.php';
         break;
     case 'logout':

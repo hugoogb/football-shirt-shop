@@ -20,14 +20,14 @@ const product_detail = async (product_id) => {
 }
 
 const load_signUp = async () => {
-    document.getElementById("content-container").innerHTML = await fetch("/index.php/?action=view-signup")
+    document.getElementById("content-container").innerHTML = await fetch("/index.php/?action=form-signup")
         .then(response => {
             return response.text();
         })
 }
 
 const load_login = async () => {
-    document.getElementById("content-container").innerHTML = await fetch("/index.php/?action=view-login")
+    document.getElementById("content-container").innerHTML = await fetch("/index.php/?action=form-login")
         .then(response => {
             return response.text();
         })

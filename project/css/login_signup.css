@@ -22,13 +22,11 @@
 }
 
 .form-inputs label {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
-.form-inputs label input {
-    margin-top: 0.5rem;
+.form-inputs input {
+    margin-bottom: 0.5rem;
     padding: 0.75rem;
     outline: none;
     border: transparent;
@@ -37,20 +35,20 @@
     transition: background-color 0.3s, color 0.1s ease-in-out;
 }
 
-.form-inputs label input:hover {
+.form-inputs input:hover {
     border: 0.1rem solid #91A0B6;
 }
 
-.form-inputs label input:focus {
-    border: 0.2rem solid #91A0B6;
+.form-inputs input:focus {
+    border: 0.15rem solid #91A0B6;
 }
 
-.form-inputs label input:invalid {
+.form-inputs input:invalid {
     border: 0.1rem solid red;
 }
 
-.form-inputs label input:focus:invalid {
-    border: 0.2rem solid red;
+.form-inputs input:focus:invalid {
+    border: 0.15rem solid red;
 }
 
 .form-submit {
@@ -92,64 +90,12 @@
     text-decoration: underline;
 }
 
-.login-signup-confirmation-wrapper {
-    display: flex;
-    justify-content: center;
-}
-
-.login-signup-confirmation-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-
-    margin-top: 2.5rem;
-
-    border-radius: 7px 7px 7px 7px;
-    /* generated via CSS MATIC: https://goo.gl/cIbnS */
-    -webkit-box-shadow: 0 14px 32px 0 rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0 14px 32px 0 rgba(0, 0, 0, 0.15);
-    box-shadow: 0 14px 32px 0 rgba(0, 0, 0, 0.15);
-}
-
-.login-signup-confirmation-title {
-    font-size: min(6vw, 1.5rem);
-    padding: 0.5rem 3rem;
-    border-bottom: 0.3rem solid #91A0B6;
-}
-
-.login-signup-confirmation-items {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    padding: 0.5rem 1rem;
-}
-
-.login-signup-confirmation-item {
+.form-input-checkbox {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    margin-top: 1rem;
+    margin-top: 0.25rem;
 }
 
-.login-signup-confirmation-item:first-child {
-    margin-top: 0;
-}
-
-.login-signup-confirmation-item h4 {
-    font-size: min(4.5vw, 1.2rem);
-    font-weight: 600;
-
-    padding-right: 0.5rem;
-
-    border-right: 0.15rem solid #91A0B6;
-}
-
-.login-signup-confirmation-item p {
-    font-size: min(4vw, 1rem);
-
-    padding-left: 0.5rem;
+.form-input-checkbox label {
+    margin-left: 0.5rem;
 }
