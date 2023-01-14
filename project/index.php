@@ -9,6 +9,9 @@ session_start();
 $action = $_GET['action'] ?? NULL;
 
 switch ($action) {
+    case 'cart-icon':
+        include __DIR__ . '/resource_cart_icon.php';
+        break;
     case 'form-signup':
         include __DIR__ . '/resource_signup.php';
         break;
@@ -32,6 +35,9 @@ switch ($action) {
         break;
     case 'product-detail':
         include __DIR__ . '/resource_product_detail.php';
+        break;
+    case 'add-session-cart':
+        include __DIR__ . '/resource_add_session_cart.php';
         break;
     default:
         include __DIR__ . '/resource_homepage.php';

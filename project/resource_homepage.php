@@ -17,6 +17,7 @@
             type="text/javascript" defer></script>
     <script src="/js/dropdown.js" type="text/javascript" defer></script>
     <script src="/js/fetch_calls.js" type="text/javascript" defer></script>
+    <script src="/js/cart.js" type="text/javascript" defer></script>
 </head>
 <body>
 

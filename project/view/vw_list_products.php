@@ -13,7 +13,7 @@
                     <p class="list-product-price"><?php echo $product['price'] ?></p>
                 </a>
             </div>
-            <button>Add to cart</button>
+            <button onclick="addProductToSessionCart(<?php echo $product['id'] ?>, 1)">Add to cart (1)</button>
         </div>
     <?php endforeach; ?>
 </div>

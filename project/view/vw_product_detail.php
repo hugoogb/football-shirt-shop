@@ -9,9 +9,17 @@
                 <h2 class="product-category"><?php echo $category->name ?></h2>
                 <p class="product-description"><?php echo $product->description ?></p>
             </div>
-            <div class="product-price-btn">
-                <h3 class="product-price"><?php echo $product->price ?></h3>
-                <button class="product-btn" type="button">Add to cart</button>
+            <div class="product-cart-info">
+                <div class="product-quantity">
+                    <label>Quantity:</label>
+                    <input type="number" id="product-quantity" min="1" value="1">
+                </div>
+                <div class="product-price-btn">
+                    <h3 class="product-price"><?php echo $product->price ?></h3>
+                    <button onclick="addProductToSessionCart(<?php echo $product->id ?>, getProductQuantity())"
+                            class="product-btn" type="button">Add to cart
+                    </button>
+                </div>
             </div>
         </div>
     </div>
