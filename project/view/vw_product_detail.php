@@ -15,7 +15,7 @@
                     <input type="number" id="product-quantity" min="1" value="1">
                 </div>
                 <div class="product-price-btn">
-                    <h3 class="product-price"><?php echo $product->price ?></h3>
+                    <h3 class="product-price"><?php echo $product->price ?>€</h3>
                     <button onclick="addProductToSessionCart(<?php echo $product->id ?>, getProductQuantity())"
                             class="product-btn" type="button">Add to cart
                     </button>
