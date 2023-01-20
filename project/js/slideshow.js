@@ -15,6 +15,8 @@ const show_slides = (slideIndex) => {
 }
 
 const stopSlideShow = (intervalId) => {
-    //console.log("cleared interval (id: " + intervalId + ")")
-    clearInterval(intervalId)
+    console.log("interval (id: " + intervalId + ")")
+    if (intervalId !== undefined) {
+        clearInterval(intervalId);
+    }
 }

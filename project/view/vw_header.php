@@ -25,15 +25,16 @@
                 if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
                     ?>
                     <div class="dropdown-items-container">
-                        <a class="dropdown-item user-logged" href="#"><p>Account</p></a>
-                        <a class="dropdown-item user-logged" href="#"><p>Orders</p></a>
-                        <a class="dropdown-item user-logged" href="/index.php?action=logout"><p>Logout</p></a>
+                        <a onclick="stopSlideShow(intervalId);" class="dropdown-item user-logged"><p>Account</p></a>
+                        <a onclick="stopSlideShow(intervalId);" class="dropdown-item user-logged"><p>Orders</p></a>
+                        <a onclick="stopSlideShow(intervalId);" class="dropdown-item user-logged"
+                           href="/index.php?action=logout"><p>Logout</p></a>
                     </div>
                     <?php
                 } else {
                     ?>
                     <div class="dropdown-items-container">
-                        <a onclick="load_login()" class="dropdown-item user-not-logged">
+                        <a onclick="stopSlideShow(intervalId);load_login()" class="dropdown-item user-not-logged">
                             <p>Login</p></a>
                     </div>
                     <?php
