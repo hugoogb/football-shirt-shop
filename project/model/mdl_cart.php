@@ -1,6 +1,6 @@
 <?php
 
-function addProductToSessionCart($product, $quantity)
+function addProductToSessionCart($product, $quantity): void
 {
     if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
         if (isset($_SESSION['cart']['products'][$product->name]) &&

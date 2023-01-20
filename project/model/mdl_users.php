@@ -12,7 +12,7 @@ function filter_vars_signup($values_register): array
     return [$name, $email, $password, $address, $city, $postal_code_zip];
 }
 
-function signUp($connDB, $values_register)
+function signUp($connDB, $values_register): ?\PgSql\Result
 {
     $query = "INSERT INTO users (name, email, password, address, city, postal_code_zip) VALUES ($1, $2, $3, $4, $5, $6)";
 
@@ -25,7 +25,7 @@ function signUp($connDB, $values_register)
     return $result;
 }
 
-function login($connDB, string $email, string $password)
+function login($connDB, string $email, string $password): ?object
 {
     $query_result = pg_query_params($connDB, "SELECT id, email, password FROM users WHERE email = $1 LIMIT 1", array($email));
 
@@ -38,7 +38,20 @@ function login($connDB, string $email, string $password)
     return password_verify($password, $result->password) ? $result : null;
 }
 
-function getUserData($connDB, int $user_id)
+function setUserSession(object $user, \PgSql\Connection|bool $connDB): void
+{
+    $_SESSION['user_id'] = $user->id;
+    $userData = getUserData($connDB, $_SESSION['user_id']);
+    if ($userData !== null) {
+        $_SESSION['user_data']['name'] = $userData->name;
+        $_SESSION['user_data']['email'] = $userData->email;
+        $_SESSION['user_data']['address'] = $userData->address;
+        $_SESSION['user_data']['city'] = $userData->city;
+        $_SESSION['user_data']['postal_code_zip'] = $userData->postal_code_zip;
+    }
+}
+
+function getUserData($connDB, int $user_id): ?object
 {
     $query_result = pg_query_params($connDB, "SELECT name, email, address, city, postal_code_zip FROM users WHERE id = $1", array($user_id));
 
