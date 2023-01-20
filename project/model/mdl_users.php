@@ -38,7 +38,7 @@ function login($connDB, string $email, string $password): ?object
     return password_verify($password, $result->password) ? $result : null;
 }
 
-function setUserSession(object $user, \PgSql\Connection|bool $connDB): void
+function setUserSession(object $user, $connDB): void
 {
     $_SESSION['user_id'] = $user->id;
     $userData = getUserData($connDB, $_SESSION['user_id']);
