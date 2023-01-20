@@ -101,3 +101,29 @@
 .show {
     display: block;
 }
+
+.error-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+}
+
+.error-container {
+    margin: 3rem 3rem 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+
+    border-radius: 7px 7px 7px 7px;
+    /* generated via CSS MATIC: https://goo.gl/cIbnS */
+    -webkit-box-shadow: 0 14px 32px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 14px 32px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 14px 32px 0 rgba(0, 0, 0, 0.15);
+}
+
+.error-text {
+    font-size: min(15vw, 5rem);
+    margin: 3rem;
+}
