@@ -43,6 +43,10 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
                 </div>
             </div>
         <?php endforeach; ?>
+        <div class="cart-total-price-checkout">
+            <p>Total price: <strong><?php echo $_SESSION['cart']['total_price'] ?> €</strong></p>
+            <button class="product-btn" type="button">Checkout</button>
+        </div>
     </div>
     <?php
 } else {

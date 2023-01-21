@@ -110,3 +110,19 @@
 .cart-container-delete-all:hover span {
     color: #ED851D;
 }
+
+.cart-total-price-checkout {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.cart-total-price-checkout p {
+    margin-right: 1.5rem;
+}
+
+.cart-total-price-checkout button {
+    margin-right: 10rem;
+}
