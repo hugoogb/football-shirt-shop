@@ -19,3 +19,26 @@ const reloadIconCart = async () => {
             return response.text();
         })
 }
+
+const viewCart = async () => {
+    document.getElementById("content-container").innerHTML = await fetch("/index.php/?action=view-cart")
+        .then(response => {
+            return response.text();
+        })
+}
+
+const clearCart = async () => {
+    document.getElementById("content-container").innerHTML = await fetch("/index.php?action=clear-cart")
+        .then(response => {
+            return response.text();
+        })
+    await reloadIconCart();
+}
+
+const deleteProductFromCart = async (productName) => {
+    document.getElementById("content-container").innerHTML = await fetch("/index.php?action=delete-product-cart&product_name=" + productName)
+        .then(response => {
+            return response.text();
+        })
+    await reloadIconCart();
+}

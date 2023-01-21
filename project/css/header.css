@@ -112,6 +112,7 @@
 .icon-cart-badge-container {
     text-decoration: none;
     color: black;
+    cursor: pointer;
 }
 
 .icon-cart {

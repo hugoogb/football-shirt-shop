@@ -1,0 +1,112 @@
+.cart-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.cart-product-container {
+    margin: 1.5rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    overflow: hidden;
+    width: 85%;
+    position: relative;
+
+    border-radius: 7px 7px 7px 7px;
+    /* generated via CSS MATIC: https://goo.gl/cIbnS */
+    -webkit-box-shadow: 0 14px 32px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 14px 32px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 14px 32px 0 rgba(0, 0, 0, 0.15);
+}
+
+.cart-product-container:first-child {
+    margin-top: 4rem;
+}
+
+.cart-product-img {
+    max-width: 300px;
+    border-right: 0.3rem solid #91A0B6;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.cart-product-img img {
+    display: block;
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    transition: transform 0.6s, opacity 0.3s ease-in-out;
+}
+
+.cart-product-img img:hover {
+    object-fit: cover;
+    object-position: top;
+    transform: scale(1.05);
+}
+
+.cart-product-delete svg {
+    max-width: 22px;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.2rem;
+    cursor: pointer;
+}
+
+.cart-product-delete svg:hover {
+    /* color generate via: https://codepen.io/sosuke/pen/Pjoqqp */
+    filter: invert(67%) sepia(34%) saturate(4865%) hue-rotate(349deg) brightness(97%) contrast(92%);
+}
+
+.cart-product-container-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+}
+
+.cart-product-container-info h2 {
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.cart-product-quantity-price-container {
+    position: absolute;
+    bottom: 0.2rem;
+    right: 0.5rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+.cart-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.cart-header-container h1 {
+    margin-left: 2rem;
+}
+
+.cart-container-delete-all {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+.cart-container-delete-all span {
+    white-space: nowrap;
+}
+
+.cart-container-delete-all:hover span {
+    color: #ED851D;
+}

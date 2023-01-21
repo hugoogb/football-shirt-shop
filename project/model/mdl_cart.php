@@ -15,14 +15,35 @@ function addProductToSessionCart($product, $quantity): void
         $_SESSION['cart']['products'][$product->name]['price'] = $product->price;
         $_SESSION['cart']['products'][$product->name]['img'] = $product->img;
 
-        $total_quantity = 0;
-        $total_price = 0;
-        foreach ($_SESSION['cart']['products'] as $productInCart):
-            $total_quantity += $productInCart['quantity'];
-            $total_price += $productInCart['price'] * $productInCart['quantity'];
-        endforeach;
-
-        $_SESSION['cart']['total_quantity'] = $total_quantity;
-        $_SESSION['cart']['total_price'] = $total_price;
+        calculateTotals();
     }
+}
+
+function deleteAllProductsFromCart(): void
+{
+    unset($_SESSION['cart']);
+}
+
+function deleteSingleProductFromCart($productName): void
+{
+    unset($_SESSION['cart']['products'][$productName]);
+
+    if (empty($_SESSION['cart']['products'])) {
+        unset($_SESSION['cart']);
+    } else {
+        calculateTotals();
+    }
+}
+
+function calculateTotals(): void
+{
+    $total_quantity = 0;
+    $total_price = 0;
+    foreach ($_SESSION['cart']['products'] as $productInCart):
+        $total_quantity += $productInCart['quantity'];
+        $total_price += $productInCart['price'] * $productInCart['quantity'];
+    endforeach;
+
+    $_SESSION['cart']['total_quantity'] = $total_quantity;
+    $_SESSION['cart']['total_price'] = $total_price;
 }

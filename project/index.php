@@ -39,6 +39,15 @@ switch ($action) {
     case 'add-session-cart':
         include __DIR__ . '/resource_add_session_cart.php';
         break;
+    case 'view-cart':
+        include __DIR__ . '/resource_cart.php';
+        break;
+    case 'clear-cart':
+        include __DIR__ . '/resource_clear_cart.php';
+        break;
+    case 'delete-product-cart':
+        include __DIR__ . '/resource_delete_product_cart.php';
+        break;
     default:
         include __DIR__ . '/resource_homepage.php';
         break;
