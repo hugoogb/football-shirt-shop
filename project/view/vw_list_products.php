@@ -13,7 +13,19 @@
                     <p class="list-product-price"><?php echo $product['price'] ?> €</p>
                 </a>
             </div>
-            <button onclick="addProductToSessionCart(<?php echo $product['id'] ?>, 1)">Add to cart (1)</button>
+            <?php
+            if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
+                ?>
+                <button onclick="addProductToSessionCart(<?php echo $product['id'] ?>, 1)" class="logged-in-button">Add
+                    to cart (1)
+                </button>
+                <?php
+            } else {
+                ?>
+                <button>Login to add to cart</button>
+                <?php
+            }
+            ?>
         </div>
     <?php endforeach; ?>
 </div>

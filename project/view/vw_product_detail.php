@@ -16,9 +16,19 @@
                 </div>
                 <div class="product-price-btn">
                     <h3 class="product-price"><?php echo $product->price ?>€</h3>
-                    <button onclick="addProductToSessionCart(<?php echo $product->id ?>, getProductQuantity())"
-                            class="product-btn" type="button">Add to cart
-                    </button>
+                    <?php
+                    if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
+                        ?>
+                        <button onclick="addProductToSessionCart(<?php echo $product->id ?>, getProductQuantity())"
+                                class="logged-in-button" type="button">Add to cart
+                        </button>
+                        <?php
+                    } else {
+                        ?>
+                        <button>Login to add to cart</button>
+                        <?php
+                    }
+                    ?>
                 </div>
             </div>
         </div>

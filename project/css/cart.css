@@ -126,3 +126,16 @@
 .cart-total-price-checkout button {
     margin-right: 10rem;
 }
+
+.checkout-button {
+    margin: 0 1rem;
+    padding: 0.75rem;
+    font-size: min(4vw, 1.2rem);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    outline: none;
+    border: transparent;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.1s ease-in-out;
+}

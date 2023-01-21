@@ -23,11 +23,10 @@
     transition: background-color 0.3s, color 0.1s ease-in-out;
 }
 
-.list-product-container-btn button:hover {
+.logged-in-button:hover {
     background-color: #91A0B6;
     color: #F4D8A4;
 }
-
 
 .list-product-container {
     position: relative;
