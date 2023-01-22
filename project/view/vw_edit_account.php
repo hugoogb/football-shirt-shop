@@ -4,8 +4,10 @@
 
 <div class="form-wrapper">
     <div class="form-container">
-        <form method="post" action="/index.php?action=edit-account">
+        <form method="post" enctype="multipart/form-data" action="/index.php?action=edit-account-procedure">
             <div class="form-inputs">
+                <label>Profile picture</label>
+                <input type="file" name="img" accept="image/png, image/jpeg, image/jpg">
                 <label>Name</label>
                 <input type="text" name="name" value="<?php echo $_SESSION['user_data']['name'] ?>"
                        placeholder="<?php echo $_SESSION['user_data']['name'] ?>" required

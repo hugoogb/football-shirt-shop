@@ -1,0 +1,15 @@
+.form-inputs h3 {
+    margin-bottom: 0.5rem;
+    border-bottom: 0.15rem solid #91A0B6;
+}
+
+.form-inputs p {
+    margin-bottom: 1.5rem;
+    padding-left: 0.5rem;
+}
+
+.form-inputs img {
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+    max-width: 150px;
+}

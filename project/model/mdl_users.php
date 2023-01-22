@@ -33,10 +33,9 @@ function login($connDB, string $email, string $password): ?object
     return password_verify($password, $result->password) ? $result : null;
 }
 
-function setUserSession(object $user, $connDB): void
+function setUserSession($connDB, $user_id): void
 {
-    $_SESSION['user_id'] = $user->id;
-    $userData = getUserData($connDB, $_SESSION['user_id']);
+    $userData = getUserData($connDB, $user_id);
     if ($userData !== null) {
         $_SESSION['user_data']['name'] = $userData->name;
         $_SESSION['user_data']['email'] = $userData->email;
@@ -58,4 +57,18 @@ function getUserData($connDB, int $user_id): ?object
     }
 
     return $result;
+}
+
+function updateUserData($connDB, int $user_id, $values_update): void
+{
+    $query = "UPDATE users SET name=$1, email=$2, address=$3, city=$4, postal_code_zip=$5 WHERE id=$user_id";
+
+    pg_query_params($connDB, $query, $values_update);
+}
+
+function updateUserImg($connDB, int $user_id, $img): void
+{
+    $query = "UPDATE users SET img=$1 WHERE id=$user_id";
+
+    pg_query_params($connDB, $query, array($img));
 }

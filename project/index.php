@@ -6,6 +6,9 @@ error_reporting(E_ALL);
 
 session_start();
 
+$imgAbsolutePath = '/home/TDIW/tdiw-k5/public_html/files/img/';
+$imgPublicPath = '/files/img/';
+
 $action = $_GET['action'] ?? NULL;
 
 switch ($action) {
@@ -56,6 +59,9 @@ switch ($action) {
         break;
     case 'edit-account':
         include __DIR__ . '/resource_edit_account.php';
+        break;
+    case 'edit-account-procedure':
+        include __DIR__ . '/resource_edit_account_procedure.php';
         break;
     default:
         include __DIR__ . '/resource_homepage.php';

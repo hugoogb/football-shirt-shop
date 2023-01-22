@@ -15,20 +15,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     updateUserData($connDB, $_SESSION['user_id'], $values_update);
 
-    if (isset($_POST["img"]) && !empty($_POST["img"])) {
-        $img = $_POST["img"];
-        $values_update = [$name, $email, $address, $city, $postal_code_zip, $img];
+    if (isset($_FILES['img']) && !empty($_FILES['img'])) {
+        $imageName = sprintf('%s-%s', $_SESSION['user_id'], basename($_FILES['img']['name']));
 
-        if (isset($_FILES['img']) && !empty($_FILES['img'])) {
-            $imageName = basename($_FILES['img']['name']);
-            //    $imagePath = sprintf('%s%s', UPLOADS_FULL_PATH, $imageName);
-            $imagePath = sprintf('%s%s', __DIR__ . '/img/', $imageName);
+        $imagePath = sprintf('%s%s', $imgAbsolutePath, $imageName);
 
-            move_uploaded_file($_FILES['img']['tmp_name'], $imagePath);
-        }
+        move_uploaded_file($_FILES['img']['tmp_name'], $imagePath);
 
-        updateUserImg($connDB, $_SESSION['user_id'], $img);
+        updateUserImg($connDB, $_SESSION['user_id'], $imageName);
     }
+
+    setUserSession($connDB, $_SESSION['user_id']);
 }
 
 header('Location: /');

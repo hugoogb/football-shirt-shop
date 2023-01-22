@@ -7,6 +7,7 @@
 
 .form-container {
     padding: 1rem;
+    min-width: 30%;
 
     border-radius: 7px 7px 7px 7px;
     /* generated via CSS MATIC: https://goo.gl/cIbnS */
@@ -23,6 +24,7 @@
 
 .form-inputs label {
     margin-bottom: 0.5rem;
+    font-weight: 700;
 }
 
 .form-inputs input {
@@ -54,7 +56,7 @@
 .form-submit {
     width: fit-content;
     padding: 0.75rem;
-    margin-left: 12rem;
+    margin-left: auto;
 }
 
 .form-submit input {
