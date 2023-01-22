@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $postal_code_zip = $_POST["postal-code-zip"];
     $img = $_POST["img"];
 
-    $values_register = [$name, $email, $password_hash, $address, $city, $postal_code_zip];
+    $values_register = [$name, $email, $password_hash, $address, $city, $postal_code_zip, $img];
 
     $values_register = filter_vars_signup($values_register);
 

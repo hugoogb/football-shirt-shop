@@ -8,13 +8,14 @@ function filter_vars_signup($values_register): array
     $address = filter_var($values_register[3]);
     $city = filter_var($values_register[4]);
     $postal_code_zip = filter_var($values_register[5], FILTER_VALIDATE_INT);
+    $img = $values_register[6];
 
-    return [$name, $email, $password, $address, $city, $postal_code_zip];
+    return [$name, $email, $password, $address, $city, $postal_code_zip, $img];
 }
 
 function signUp($connDB, $values_register): void
 {
-    $query = "INSERT INTO users (name, email, password, address, city, postal_code_zip) VALUES ($1, $2, $3, $4, $5, $6)";
+    $query = "INSERT INTO users (name, email, password, address, city, postal_code_zip, img) VALUES ($1, $2, $3, $4, $5, $6, $7)";
 
     pg_query_params($connDB, $query, $values_register);
 }
