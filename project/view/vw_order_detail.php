@@ -23,8 +23,7 @@
                         <?php echo $productInOrder['product_quantity']; ?>
                     </p>
                     <p>
-                        <?php echo $productInOrder['product_price']; ?>
-                        €
+                        <strong><?php echo $productInOrder['product_price']; ?> €</strong>
                     </p>
                 </div>
             </div>
