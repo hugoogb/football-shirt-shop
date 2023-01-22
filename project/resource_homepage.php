@@ -15,12 +15,14 @@
     <link rel="stylesheet" type="text/css" href="/css/login_signup.css">
     <link rel="stylesheet" type="text/css" href="/css/cart.css">
     <link rel="stylesheet" type="text/css" href="/css/account.css">
+    <link rel="stylesheet" type="text/css" href="/css/orders.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"
-            type="text/javascript" defer></script>
-    <script src="/js/dropdown.js" type="text/javascript" defer></script>
-    <script src="/js/fetch_calls.js" type="text/javascript" defer></script>
-    <script src="/js/cart.js" type="text/javascript" defer></script>
-    <script src="/js/account.js" type="text/javascript" defer></script>
+            type="application/javascript" defer></script>
+    <script src="/js/dropdown.js" type="application/javascript" defer></script>
+    <script src="/js/fetch_calls.js" type="application/javascript" defer></script>
+    <script src="/js/cart.js" type="application/javascript" defer></script>
+    <script src="/js/account.js" type="application/javascript" defer></script>
+    <script src="/js/orders.js" type="application/javascript" defer></script>
 </head>
 <body>
 

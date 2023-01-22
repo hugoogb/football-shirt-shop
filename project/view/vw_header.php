@@ -27,7 +27,8 @@
                     <div class="dropdown-items-container">
                         <a onclick="stopSlideShow(intervalId);myAccount()" class="dropdown-item user-logged"><p>
                                 Account</p></a>
-                        <a onclick="stopSlideShow(intervalId);" class="dropdown-item user-logged"><p>Orders</p></a>
+                        <a onclick="stopSlideShow(intervalId);listOrders()" class="dropdown-item user-logged"><p>
+                                Orders</p></a>
                         <a onclick="stopSlideShow(intervalId);" class="dropdown-item user-logged"
                            href="/index.php?action=logout"><p>Logout</p></a>
                     </div>

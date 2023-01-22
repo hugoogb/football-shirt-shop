@@ -7,7 +7,8 @@
         <form method="post" action="/index.php?action=login">
             <div class="form-inputs">
                 <label>Email</label>
-                <input type="email" name="email" placeholder="Email" required>
+                <input type="email" name="email" placeholder="Email" required
+                       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                 <label>Password</label>
                 <input type="password" name="password" placeholder="Password" required>
             </div>

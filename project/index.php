@@ -63,6 +63,12 @@ switch ($action) {
     case 'edit-account-procedure':
         include __DIR__ . '/resource_edit_account_procedure.php';
         break;
+    case 'view-orders':
+        include __DIR__ . '/resource_orders.php';
+        break;
+    case 'view-order-detail':
+        include __DIR__ . '/resource_order_detail.php';
+        break;
     default:
         include __DIR__ . '/resource_homepage.php';
         break;

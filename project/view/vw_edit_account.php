@@ -14,7 +14,8 @@
                        pattern="[a-zA-Z\s]+">
                 <label>Email</label>
                 <input type="email" name="email" value="<?php echo $_SESSION['user_data']['email'] ?>"
-                       placeholder="<?php echo $_SESSION['user_data']['email'] ?>" required>
+                       placeholder="<?php echo $_SESSION['user_data']['email'] ?>" required
+                       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                 <label>Address</label>
                 <input type="text" name="address" value="<?php echo $_SESSION['user_data']['address'] ?>"
                        placeholder="<?php echo $_SESSION['user_data']['address'] ?>" required
