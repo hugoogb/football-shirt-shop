@@ -12,9 +12,9 @@ function saveOrderToDB($connDB): void
     $orders = pg_fetch_object($result);
 
     foreach ($_SESSION['cart']['products'] as $productInCart):
-        $values_order_products = [$productInCart['product_id'], $productInCart['quantity'], $productInCart['price'], $productInCart['img'], $orders->id];
+        $values_order_products = [$productInCart['product_id'], $productInCart['quantity'], $productInCart['price'], $productInCart['img'], $productInCart['name'], $orders->id];
 
-        $query = "INSERT INTO order_products (product_id, quantity, price, img, order_id) VALUES ($1, $2, $3, $4, $5)";
+        $query = "INSERT INTO order_products (product_id, product_quantity, product_price, product_img, product_name, order_id) VALUES ($1, $2, $3, $4, $5, $6)";
 
         pg_query_params($connDB, $query, $values_order_products);
     endforeach;
