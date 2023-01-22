@@ -48,3 +48,18 @@ function calculateTotals(): void
     $_SESSION['cart']['total_quantity'] = $total_quantity;
     $_SESSION['cart']['total_price'] = $total_price;
 }
+
+function editProductFromCart($productName, $method): void
+{
+    if ($method === 'add') {
+        $_SESSION['cart']['products'][$productName]['quantity'] += 1;
+    } else if ($method === 'remove') {
+        $_SESSION['cart']['products'][$productName]['quantity'] -= 1;
+    }
+
+    if ($_SESSION['cart']['products'][$productName]['quantity'] === 0) {
+        deleteSingleProductFromCart($productName);
+    } else {
+        calculateTotals();
+    }
+}

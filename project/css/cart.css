@@ -139,3 +139,39 @@
     cursor: pointer;
     transition: background-color 0.3s, color 0.1s ease-in-out;
 }
+
+.cart-quantity-edit-container {
+    display: flex;
+    padding: 0.3rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.cart-quantity-edit p {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.cart-quantity-edit {
+    cursor: pointer;
+}
+
+.cart-quantity-edit svg:hover {
+    /* color generate via: https://codepen.io/sosuke/pen/Pjoqqp */
+    filter: invert(67%) sepia(34%) saturate(4865%) hue-rotate(349deg) brightness(97%) contrast(92%);
+}
+
+.svg-minus {
+    max-width: 15px;
+    position: absolute;
+    left: 0.6rem;
+    top: 0.5rem;
+}
+
+.svg-plus {
+    max-width: 15px;
+    position: absolute;
+    right: 0.6rem;
+    top: 0.5rem;
+}

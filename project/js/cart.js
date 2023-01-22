@@ -43,6 +43,14 @@ const deleteProductFromCart = async (productName) => {
     await reloadIconCart();
 }
 
+const editProductFromCart = async (productName, method) => {
+    document.getElementById("content-container").innerHTML = await fetch("/index.php?action=edit-product-cart&product_name=" + productName + "&method=" + method)
+        .then(response => {
+            return response.text();
+        })
+    await reloadIconCart();
+}
+
 const doCheckout = async () => {
     document.getElementById("content-container").innerHTML = await fetch("/index.php/?action=checkout")
         .then(response => {

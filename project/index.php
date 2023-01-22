@@ -51,6 +51,9 @@ switch ($action) {
     case 'delete-product-cart':
         include __DIR__ . '/resource_delete_product_cart.php';
         break;
+    case 'edit-product-cart':
+        include __DIR__ . '/resource_edit_product_cart.php';
+        break;
     case 'checkout':
         include __DIR__ . '/resource_checkout.php';
         break;
