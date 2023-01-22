@@ -4,6 +4,9 @@
 
 <div class="form-wrapper">
     <div class="form-container">
+        <h3>Profile picture</h3>
+        <img src="<?php echo $_SESSION['user_data']['img'] ?>"
+             alt="<?php echo $_SESSION['user_data']['name'] ?> profile picture">
         <h3>Name</h3>
         <p><?php echo $_SESSION['user_data']['name'] ?></p>
         <h3>Email</h3>

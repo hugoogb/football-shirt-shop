@@ -42,12 +42,13 @@ function setUserSession(object $user, $connDB): void
         $_SESSION['user_data']['address'] = $userData->address;
         $_SESSION['user_data']['city'] = $userData->city;
         $_SESSION['user_data']['postal_code_zip'] = $userData->postal_code_zip;
+        $_SESSION['user_data']['img'] = $userData->img;
     }
 }
 
 function getUserData($connDB, int $user_id): ?object
 {
-    $query_result = pg_query_params($connDB, "SELECT name, email, address, city, postal_code_zip FROM users WHERE id = $1", array($user_id));
+    $query_result = pg_query_params($connDB, "SELECT name, email, address, city, postal_code_zip, img FROM users WHERE id = $1", array($user_id));
 
     $result = pg_fetch_object($query_result);
 
