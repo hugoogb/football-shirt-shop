@@ -19,6 +19,7 @@
                 <label>Postal code (ZIP)</label>
                 <input type="text" name="postal-code-zip" placeholder="Postal code (ZIP)" required
                        pattern="[0-9]{5}">
+                <input type="hidden" name="img" value="https://cdn-icons-png.flaticon.com/512/149/149071.png">
                 <div class="form-input-checkbox">
                     <input type="checkbox" name="auto-login" value="auto-login">
                     <label>Log me in after submit</label>
