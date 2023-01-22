@@ -51,6 +51,12 @@ switch ($action) {
     case 'checkout':
         include __DIR__ . '/resource_checkout.php';
         break;
+    case 'my-account':
+        include __DIR__ . '/resource_my_account.php';
+        break;
+    case 'edit-account':
+        include __DIR__ . '/resource_edit_account.php';
+        break;
     default:
         include __DIR__ . '/resource_homepage.php';
         break;
