@@ -72,6 +72,9 @@ switch ($action) {
     case 'view-order-detail':
         include __DIR__ . '/resource_order_detail.php';
         break;
+    case 'search':
+        include __DIR__ . '/resource_search.php';
+        break;
     default:
         include __DIR__ . '/resource_homepage.php';
         break;

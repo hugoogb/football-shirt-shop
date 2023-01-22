@@ -23,6 +23,7 @@
     <script src="/js/cart.js" type="application/javascript" defer></script>
     <script src="/js/account.js" type="application/javascript" defer></script>
     <script src="/js/orders.js" type="application/javascript" defer></script>
+    <script src="/js/search.js" type="application/javascript" defer></script>
 </head>
 <body>
 

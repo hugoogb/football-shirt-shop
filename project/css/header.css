@@ -10,7 +10,46 @@
 }
 
 .navbar-left {
+    display: flex;
     padding-left: 0.5rem;
+}
+
+.search-bar {
+    padding: 0.5rem;
+    position: relative;
+}
+
+.search-bar input {
+    margin-top: 0.5rem;
+    margin-right: 3rem;
+    margin-bottom: 0.5rem;
+    padding: 0.75rem;
+    outline: none;
+    border: transparent;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.1s ease-in-out;
+}
+
+.search-bar input:hover {
+    border: 0.1rem solid #2B303A;
+}
+
+.search-bar input:focus {
+    border: 0.15rem solid #2B303A;
+}
+
+.search-bar-svg svg {
+    max-width: 27px;
+    position: absolute;
+    right: 0.8rem;
+    top: 1.35rem;
+    cursor: pointer;
+}
+
+.search-bar-svg svg:hover {
+    /* color generate via: https://codepen.io/sosuke/pen/Pjoqqp */
+    filter: invert(67%) sepia(34%) saturate(4865%) hue-rotate(349deg) brightness(97%) contrast(92%);
 }
 
 .navbar-logo {
