@@ -25,7 +25,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $user = login($connDB, $email, $password);
 
         if ($user) {
-            setUserSession($user, $connDB);
+            $_SESSION['user_id'] = $user->id;
+            setUserSession($connDB, $_SESSION['user_id']);
         }
     } else {
         include __DIR__ . '/../view/vw_signup_confirmation.php';
