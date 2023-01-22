@@ -1,4 +1,4 @@
 <script>
     alert("Signup successfully: you can Login now!");
-    window.location.href = "/index.php";
+    window.location.href = "/";
 </script>

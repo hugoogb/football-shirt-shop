@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $values_register = filter_vars_signup($values_register);
 
-    $result = signUp($connDB, $values_register);
+    signUp($connDB, $values_register);
 
     if (isset($_POST['auto-login'])) {
         $user = login($connDB, $email, $password);
@@ -33,4 +33,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-header('Location: /index.php');
+header('Location: /');

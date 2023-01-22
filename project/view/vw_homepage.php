@@ -1,5 +1,5 @@
 <div class="logo-container">
-    <a href="/index.php" target="_self">
+    <a href="/" target="_self">
         <img class="logo-img"
              src="https://www.classicfootball.shop/wpsystem/wp-content/uploads/2022/03/new-logo-horizontal.png"
              alt="big logo">
