@@ -53,8 +53,10 @@ function editProductFromCart($productName, $method): void
 {
     if ($method === 'add') {
         $_SESSION['cart']['products'][$productName]['quantity'] += 1;
+        $_SESSION['cart']['products'][$productName]['price'] += $_SESSION['cart']['products'][$productName]['price'];
     } else if ($method === 'remove') {
         $_SESSION['cart']['products'][$productName]['quantity'] -= 1;
+        $_SESSION['cart']['products'][$productName]['price'] -= $_SESSION['cart']['products'][$productName]['price'];
     }
 
     if ($_SESSION['cart']['products'][$productName]['quantity'] === 0) {
